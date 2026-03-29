@@ -1,9 +1,12 @@
-//Bài 1
-let a = Number(prompt('Mời bạn nhập vào số a: '));
-let b = Number(prompt('Mời bạn nhập vào số b: '));
-if(a % b === 0){
-    alert('a chia hết cho b');
-}else{
-    alert('a không chia hết cho b');
-}
 
+let msonguyen = [];
+let dem = 0; 
+for(let i = 0; i < 10 ;i++){
+    num = Number(prompt('Mời bạn nhập vào số nguyên: '));
+    msonguyen.push(num);
+    if(num >= 10){
+        dem++;
+    }
+}
+alert("Có "+ dem + " số nguyên lớn hơn bằng 10")
+console.log(msonguyen);
